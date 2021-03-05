@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`models.Activity invalidates DEFAULT 1`] = `
+"[
+  {
+    \\"validation\\": \\"uuid\\",
+    \\"code\\": \\"invalid_string\\",
+    \\"path\\": [
+      \\"uuid\\"
+    ],
+    \\"message\\": \\"Invalid uuid\\"
+  },
+  {
+    \\"validation\\": \\"uuid\\",
+    \\"code\\": \\"invalid_string\\",
+    \\"path\\": [
+      \\"user_uuid\\"
+    ],
+    \\"message\\": \\"Invalid uuid\\"
+  },
+  {
+    \\"validation\\": \\"uuid\\",
+    \\"code\\": \\"invalid_string\\",
+    \\"path\\": [
+      \\"space_uuid\\"
+    ],
+    \\"message\\": \\"Invalid uuid\\"
+  },
+  {
+    \\"code\\": \\"invalid_type\\",
+    \\"expected\\": \\"string\\",
+    \\"received\\": \\"number\\",
+    \\"path\\": [
+      \\"title\\"
+    ],
+    \\"message\\": \\"Expected string, received number\\"
+  },
+  {
+    \\"code\\": \\"invalid_type\\",
+    \\"expected\\": \\"string\\",
+    \\"received\\": \\"number\\",
+    \\"path\\": [
+      \\"description\\"
+    ],
+    \\"message\\": \\"Expected string, received number\\"
+  },
+  {
+    \\"code\\": \\"custom\\",
+    \\"message\\": \\"Invalid timestamp\\",
+    \\"path\\": [
+      \\"begins\\"
+    ]
+  },
+  {
+    \\"code\\": \\"custom\\",
+    \\"message\\": \\"Invalid timestamp\\",
+    \\"path\\": [
+      \\"ends\\"
+    ]
+  },
+  {
+    \\"code\\": \\"custom\\",
+    \\"message\\": \\"Invalid timestamp\\",
+    \\"path\\": [
+      \\"created\\"
+    ]
+  }
+]"
+`;
+
+exports[`models.Activity validates DEFAULT 1`] = `
+Object {
+  "begins": "2021-03-05T21:14:59.057Z",
+  "created": "2021-03-05T21:14:59.057Z",
+  "description": "Tutti i miei piani & le mie azioni contro Firenze",
+  "ends": "2021-03-05T21:14:59.057Z",
+  "space_uuid": "e141f390-b41e-43b3-82d0-280ea664a0a8",
+  "title": "Vendetta contro Firenze",
+  "user_uuid": "e141f390-b41e-43b3-82d0-280ea664a0a8",
+  "uuid": "e141f390-b41e-43b3-82d0-280ea664a0a8",
+}
+`;

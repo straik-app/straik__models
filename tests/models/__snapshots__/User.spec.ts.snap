@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`models.User invalidates DEFAULT 1`] = `
+"[
+  {
+    \\"validation\\": \\"uuid\\",
+    \\"code\\": \\"invalid_string\\",
+    \\"path\\": [
+      \\"uuid\\"
+    ],
+    \\"message\\": \\"Invalid uuid\\"
+  },
+  {
+    \\"code\\": \\"invalid_type\\",
+    \\"expected\\": \\"string\\",
+    \\"received\\": \\"number\\",
+    \\"path\\": [
+      \\"full_name\\"
+    ],
+    \\"message\\": \\"Expected string, received number\\"
+  },
+  {
+    \\"code\\": \\"invalid_type\\",
+    \\"expected\\": \\"string\\",
+    \\"received\\": \\"number\\",
+    \\"path\\": [
+      \\"pref_name\\"
+    ],
+    \\"message\\": \\"Expected string, received number\\"
+  },
+  {
+    \\"validation\\": \\"email\\",
+    \\"code\\": \\"invalid_string\\",
+    \\"path\\": [
+      \\"email\\"
+    ],
+    \\"message\\": \\"Invalid email\\"
+  },
+  {
+    \\"code\\": \\"invalid_type\\",
+    \\"expected\\": \\"string\\",
+    \\"received\\": \\"number\\",
+    \\"path\\": [
+      \\"password\\"
+    ],
+    \\"message\\": \\"Expected string, received number\\"
+  },
+  {
+    \\"code\\": \\"invalid_type\\",
+    \\"expected\\": \\"boolean\\",
+    \\"received\\": \\"nan\\",
+    \\"path\\": [
+      \\"admin\\"
+    ],
+    \\"message\\": \\"Expected boolean, received nan\\"
+  },
+  {
+    \\"code\\": \\"invalid_enum_value\\",
+    \\"options\\": [
+      \\"FREE\\",
+      \\"PRO\\"
+    ],
+    \\"path\\": [
+      \\"subscription\\"
+    ],
+    \\"message\\": \\"Input must be one of these values: FREE, PRO\\"
+  },
+  {
+    \\"code\\": \\"invalid_type\\",
+    \\"expected\\": \\"boolean\\",
+    \\"received\\": \\"nan\\",
+    \\"path\\": [
+      \\"verified\\"
+    ],
+    \\"message\\": \\"Expected boolean, received nan\\"
+  },
+  {
+    \\"code\\": \\"custom\\",
+    \\"message\\": \\"Invalid timestamp\\",
+    \\"path\\": [
+      \\"created\\"
+    ]
+  }
+]"
+`;
+
+exports[`models.User validates ADMIN 1`] = `
+Object {
+  "admin": true,
+  "created": "2021-03-05T21:12:59.057Z",
+  "email": "dante.alighieri@dipasqualew.com",
+  "full_name": "Dante Alighieri",
+  "password": "Be4trice",
+  "pref_name": "Dante",
+  "subscription": "PRO",
+  "uuid": "74268570-5b67-4bc8-8385-46f6e02a8fe7",
+  "verified": true,
+}
+`;
+
+exports[`models.User validates DEFAULT 1`] = `
+Object {
+  "admin": false,
+  "created": "2021-03-05T21:12:59.057Z",
+  "email": "dante.alighieri@dipasqualew.com",
+  "full_name": "Dante Alighieri",
+  "password": "Be4trice",
+  "pref_name": "Dante",
+  "subscription": "PRO",
+  "uuid": "e141f390-b41e-43b3-82d0-280ea664a0a8",
+  "verified": true,
+}
+`;
+
+exports[`models.User validates FREE_USER 1`] = `
+Object {
+  "admin": false,
+  "created": "2021-03-05T21:12:59.057Z",
+  "email": "dante.alighieri@dipasqualew.com",
+  "full_name": "Dante Alighieri",
+  "password": "Be4trice",
+  "pref_name": "Dante",
+  "subscription": "FREE",
+  "uuid": "916d8792-8968-4cd6-ba5f-e3c4a6694c02",
+  "verified": true,
+}
+`;
+
+exports[`models.User validates PRO_USER 1`] = `
+Object {
+  "admin": false,
+  "created": "2021-03-05T21:12:59.057Z",
+  "email": "dante.alighieri@dipasqualew.com",
+  "full_name": "Dante Alighieri",
+  "password": "Be4trice",
+  "pref_name": "Dante",
+  "subscription": "PRO",
+  "uuid": "4597d7c7-1d39-4a5e-9d6a-3ea2def0bf4c",
+  "verified": true,
+}
+`;

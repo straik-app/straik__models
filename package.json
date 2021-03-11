@@ -1,5 +1,6 @@
 {
   "name": "@straik/models",
+  "private": false,
   "version": "0.1.0",
   "description": "Data models for the Straik App",
   "main": "src/main.ts",

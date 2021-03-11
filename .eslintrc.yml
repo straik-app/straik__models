@@ -1,0 +1,7 @@
+root: true
+
+extends:
+ - dipasqualew/mixins/base
+ - dipasqualew/mixins/imports
+ - dipasqualew/mixins/jsdoc
+ - dipasqualew/mixins/ts

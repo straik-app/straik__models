@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`models.Tag invalidates DEFAULT 1`] = `
+"[
+  {
+    \\"validation\\": \\"uuid\\",
+    \\"code\\": \\"invalid_string\\",
+    \\"path\\": [
+      \\"uuid\\"
+    ],
+    \\"message\\": \\"Invalid uuid\\"
+  },
+  {
+    \\"validation\\": \\"uuid\\",
+    \\"code\\": \\"invalid_string\\",
+    \\"path\\": [
+      \\"user_uuid\\"
+    ],
+    \\"message\\": \\"Invalid uuid\\"
+  },
+  {
+    \\"code\\": \\"invalid_type\\",
+    \\"expected\\": \\"string\\",
+    \\"received\\": \\"number\\",
+    \\"path\\": [
+      \\"title\\"
+    ],
+    \\"message\\": \\"Expected string, received number\\"
+  },
+  {
+    \\"code\\": \\"custom\\",
+    \\"message\\": \\"Invalid slug\\",
+    \\"path\\": [
+      \\"slug\\"
+    ]
+  },
+  {
+    \\"code\\": \\"invalid_type\\",
+    \\"expected\\": \\"string\\",
+    \\"received\\": \\"number\\",
+    \\"path\\": [
+      \\"description\\"
+    ],
+    \\"message\\": \\"Expected string, received number\\"
+  },
+  {
+    \\"code\\": \\"custom\\",
+    \\"message\\": \\"Invalid timestamp\\",
+    \\"path\\": [
+      \\"created\\"
+    ]
+  }
+]"
+`;
+
+exports[`models.Tag validates DEFAULT 1`] = `
+Object {
+  "created": "2021-03-05T21:13:59.057Z",
+  "description": "A task",
+  "slug": "task",
+  "title": "Task",
+  "user_uuid": "e141f390-b41e-43b3-82d0-280ea664a0a8",
+  "uuid": "e141f390-b41e-43b3-82d0-280ea664a0a8",
+}
+`;

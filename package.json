@@ -25,5 +25,10 @@
     "build:package": "cp package.json README.md LICENSE ./dist",
     "build": "yarn build:compile && yarn build:package",
     "test": "jest --colors"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
